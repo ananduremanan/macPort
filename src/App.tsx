@@ -1,6 +1,30 @@
 import "./App.scss";
+import { useEffect } from "react";
 
 function App() {
+  const goFullScreen = () => {
+    const element = document.documentElement;
+    if (element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if (element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if (element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if (element.requestFullscreen) {
+      element.requestFullscreen();
+    }
+  };
+
+  useEffect(() => {
+    if (
+      window.confirm(
+        "This site requires full screen. Do you want to go full screen?"
+      )
+    ) {
+      goFullScreen();
+    }
+  }, []);
+
   return (
     <>
       <div className="menu-bar">
