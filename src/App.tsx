@@ -1,12 +1,17 @@
 import "./App.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Menubar from "./components/Menubar";
 import Docker from "./components/Docker";
 import WelcomeWindow from "./components/WelcomeWindow";
 
 function App() {
   const [isFullScreen, setIsFullScreen] = useState(false);
-  console.log(isFullScreen);
+
+  useEffect(() => {
+    confirm(
+      "This Page is under Development and not optimised for Mobiles. Continue Anyway?"
+    );
+  }, []);
 
   return (
     <>
