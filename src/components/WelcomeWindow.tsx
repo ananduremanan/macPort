@@ -5,6 +5,8 @@ export default function WelcomeWindow(props: any) {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [showPopUp, setShowPopUp] = useState(true);
 
+  console.log(isFullscreen);
+
   useEffect(() => {
     function onFullscreenChange() {
       setIsFullscreen(Boolean(document.fullscreenElement));

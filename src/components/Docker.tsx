@@ -11,7 +11,7 @@ export default function Docker() {
       item.addEventListener("mouseover", (e: any) => {
         focus(e.target, index, icons);
       });
-      item.addEventListener("mouseleave", (e: any) => {
+      item.addEventListener("mouseleave", () => {
         icons.forEach((item: any) => {
           item.style.transform = "scale(1)  translateY(0px)";
         });
